@@ -34,4 +34,4 @@ def save_by_country(df, output_dir='final_data'):
         
         output_path = os.path.join(output_dir, f'country_{country}.csv')
         country_df.to_csv(output_path, index=False)
-        print(f"✅ Saved: {output_path}")
+        print(f"Saved: {output_path}")

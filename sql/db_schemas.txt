@@ -1,0 +1,35 @@
+
+-- MySQL Schema (for USA customers)
+
+CREATE DATABASE IF NOT EXISTS customer_us_db;
+USE customer_us_db;
+
+CREATE TABLE IF NOT EXISTS customers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    gender VARCHAR(10),
+    email VARCHAR(100),
+    signup_date DATE,
+    address TEXT,
+    country VARCHAR(50),
+    department VARCHAR(100),
+    designation VARCHAR(100)
+);
+
+
+-- PostgreSQL Schema (for UK & India customers)
+
+CREATE DATABASE customer_global_db;
+\c customer_global_db
+
+CREATE TABLE IF NOT EXISTS customers (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    gender VARCHAR(10),
+    email VARCHAR(100),
+    signup_date DATE,
+    address TEXT,
+    country VARCHAR(50),
+    department VARCHAR(100),
+    designation VARCHAR(100)
+);

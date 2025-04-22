@@ -1,0 +1,87 @@
+{
+    "total_records": 9915,
+    "records_per_country": {
+        "india": 3393,
+        "usa": 3342,
+        "uk": 3180
+    },
+    "processed_at": "2025-04-22 04:09:44",
+    "columns": {
+        "name": {
+            "dtype": "object",
+            "sample_values": [
+                "curtis white",
+                "justin coleman",
+                "alexander wells",
+                "linda burgess",
+                "amber robinson"
+            ]
+        },
+        "gender": {
+            "dtype": "object",
+            "sample_values": [
+                "other",
+                "female",
+                "male"
+            ]
+        },
+        "country": {
+            "dtype": "object",
+            "sample_values": [
+                "usa",
+                "india",
+                "uk"
+            ]
+        },
+        "department": {
+            "dtype": "object",
+            "sample_values": [
+                "sales",
+                "hr",
+                "finance",
+                "marketing",
+                "engineering"
+            ]
+        },
+        "designation": {
+            "dtype": "object",
+            "sample_values": [
+                "sales executive",
+                "hr coordinator",
+                "recruiter",
+                "financial analyst",
+                "accountant"
+            ]
+        },
+        "email": {
+            "dtype": "object",
+            "sample_values": [
+                "kathleenking@schmidt-graves.com",
+                "murrayrachel@hotmail.com",
+                "zunigacrystal@gmail.com",
+                "davisdouglas@gmail.com",
+                "lynn66@yahoo.com"
+            ]
+        },
+        "signup_date": {
+            "dtype": "datetime64[ns]",
+            "sample_values": [
+                "2024-02-29 00:00:00",
+                "2023-12-08 00:00:00",
+                "2022-08-20 00:00:00",
+                "2021-07-05 00:00:00",
+                "2023-02-26 00:00:00"
+            ]
+        },
+        "address": {
+            "dtype": "object",
+            "sample_values": [
+                "6327 melissa junction, lake allisonland, md 53273",
+                "unit 5232 box 7928, dpo ap 23572",
+                "2863 danielle mills suite 862, shellyfort, dc 97304",
+                "573 wilson view, jacobland, la 01962",
+                "56734 denise inlet, port haileymouth, wv 93764"
+            ]
+        }
+    }
+}

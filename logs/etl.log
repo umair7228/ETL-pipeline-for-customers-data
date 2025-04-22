@@ -1,0 +1,45 @@
+2025-04-22 03:46:29,320 - INFO - Data extracted successfully
+2025-04-22 03:46:29,386 - INFO - Data cleaned
+2025-04-22 03:46:29,461 - INFO - Cleaned CSVs saved
+2025-04-22 03:46:29,704 - INFO - Loaded into MySQL: final_data/country_usa.csv
+2025-04-22 03:46:30,037 - INFO - Loaded into PostgreSQL: final_data/country_uk.csv
+2025-04-22 03:46:30,271 - INFO - Loaded into PostgreSQL: final_data/country_india.csv
+2025-04-22 03:46:30,272 - INFO - Data loaded into both databases
+2025-04-22 04:05:02,293 - INFO - ETL Pipeline started
+2025-04-22 04:05:03,440 - INFO - Data extracted successfully
+2025-04-22 04:05:03,496 - INFO - Data cleaned
+2025-04-22 04:05:03,568 - ERROR - ETL failed: Object of type Timestamp is not JSON serializable
+Traceback (most recent call last):
+  File "F:\Data-Engineering\ETL-pipeline-for-customers-data\main.py", line 20, in main
+    generate_metadata(cleaned_df)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "F:\Data-Engineering\ETL-pipeline-for-customers-data\etl\metadata.py", line 29, in generate_metadata
+    json.dump(metadata, f, indent=4)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Python313\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Python313\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Python313\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+  File "C:\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Timestamp is not JSON serializable
+2025-04-22 04:09:43,774 - INFO - ETL Pipeline started
+2025-04-22 04:09:44,873 - INFO - Data extracted successfully
+2025-04-22 04:09:44,928 - INFO - Data cleaned
+2025-04-22 04:09:45,064 - INFO - Cleaned CSVs saved
+2025-04-22 04:09:45,308 - INFO - Loaded into MySQL: final_data/country_usa.csv
+2025-04-22 04:09:45,634 - INFO - Loaded into PostgreSQL: final_data/country_uk.csv
+2025-04-22 04:09:45,873 - INFO - Loaded into PostgreSQL: final_data/country_india.csv
+2025-04-22 04:09:45,873 - INFO - Data loaded into both databases
