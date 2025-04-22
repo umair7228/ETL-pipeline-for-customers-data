@@ -58,13 +58,18 @@ etl_pipeline/
 │   ├── transform.py
 │   ├── load.py
 │   └── metadata.py
+├── sql/
+│   └── db_schemas.sql
+│
 ├── config/
 │   └── db_config.py
+│   └── logging_config.py
+├── test_file/
+│   └── test.ipynb
 │
 ├── main.py
 ├── requirements.txt
 ├── metadata.json
-└── db_schemas.sql
 ```
 
 ---
@@ -82,10 +87,10 @@ pip install -r requirements.txt
 Edit `config/db_config.py`:
 ```python
 # MySQL (for USA)
-mysql_url = URL.create(...)
+username, password, host, database
 
 # PostgreSQL (for UK & India)
-postgres_url = URL.create(...)
+username, password, host, database
 ```
 
 ### 3. 🏗️ Set Up Databases
@@ -117,7 +122,3 @@ python main.py
 
 Built by Umair (Data Engineer Intern) 💼  
 Feel free to reach out for improvements or feedback!
-
----
-
-> ✅ Ready for production use. Modular, extensible, and easily adaptable for other sources (CSV, API, etc).
